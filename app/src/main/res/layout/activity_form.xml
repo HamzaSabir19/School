@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Form">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp">
+
+        <EditText
+            android:id="@+id/str_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/str_email"
+             android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/str_phone"
+            android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:inputType="textPersonName"/>
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/str_pass"
+            android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberPassword"/>
+        <EditText
+            android:id="@+id/str_confirm"
+            android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="numberPassword"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/imageicon"
+               android:backgroundTint="@color/white"
+               />
+    <Button
+        android:id="@+id/str_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:text="Choose Image"
+        android:layout_gravity="center"
+        android:layout_marginRight="60dp"
+        android:textColor="@color/white"
+        ></Button>
+</LinearLayout>
+
+
+        <Button
+            android:id="@+id/str_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="Sign UP"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/shape"/>
+
+
+        <TextView
+            android:id="@+id/str_goto"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AlReady ACCOUNT?LOGIN"
+            android:textColor="@color/black"
+           />
+    </LinearLayout>
+
+</RelativeLayout>
